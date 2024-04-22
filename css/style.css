@@ -166,7 +166,7 @@ body {
 /* ===Strategy=== */
 .page-strategy-list {
         display: flex;
-        gap: 22px;
+        gap: 24px;
         /* padding-top: 119px;
         padding-bottom: 103px; */
 }
@@ -174,16 +174,20 @@ body {
         width: calc((100% - 72px) / 4);
 }
 
-.visually-hidden{
+.visually-hidden {
         position: absolute;
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
         white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
+
 .page-strategy-item-header{
         font-weight: 500;
         font-size: 20px;
